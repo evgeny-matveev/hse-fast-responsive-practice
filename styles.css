@@ -37,7 +37,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  left: 100px;
 
   width: 50px;
   height: 50px;
@@ -61,3 +61,26 @@ p {
   font-size: 20px;
   line-height: 1.2;
 }
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section {
+    width: 30%;
+    margin: 0;
+  }
+  section:last-of-type {
+    align-self: flex-start;
+  }
+}
+
+
+
+
+
+
+/* EOF */
